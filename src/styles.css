@@ -73,6 +73,58 @@ body {
     margin-top: -3em;
   }
 }
+.form {
+  position: relative;
+}
+
+.form-email {
+  border-radius: 40px;
+  border: 1px solid hsl(0deg, 36%, 70%);
+  background-color: hsl(0deg, 100%, 98%);
+  display: block;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.form-email[placeholder] {
+  font-size: 0.75rem;
+  padding: 1.25em 1.25em;
+  color: hsl(0deg, 36%, 70%);
+}
+
+.form-email:hover {
+  cursor: pointer;
+}
+
+.form-error-icon {
+  position: absolute;
+  top: 12px;
+  right: 90px;
+}
+
+.form-error-msg {
+  color: #f96464;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  margin-top: 0.5em;
+  margin-right: 5em;
+}
+
+@media (min-width: 700px) {
+  .form-email {
+    margin-left: 0;
+  }
+  .form-btn {
+    padding: 1em;
+    right: 60px;
+  }
+  .form-error-msg {
+    margin-left: 1.5em;
+  }
+  .form-error-icon {
+    right: 120px;
+  }
+}
 .form-btn {
   background-image: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 93%, 68%));
   width: 20%;
