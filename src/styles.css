@@ -1,0 +1,52 @@
+@media (min-width: 700px) {
+  body {
+    background-image: url("/images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: none;
+  }
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  background-image: linear-gradient(135deg, hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.main-title-accent {
+  color: hsl(0deg, 36%, 70%);
+  font-weight: 300;
+}
+
+.main-text,
+.form-email::placeholder {
+  color: hsl(0deg, 36%, 70%);
+  font-size: 0.875rem;
+}
+
+.form-error-msg {
+  color: hsl(0deg, 93%, 68%);
+  font-size: 0.8125rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
