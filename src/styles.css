@@ -164,6 +164,45 @@ body {
     width: 100%;
   }
 }
+.main {
+  margin: 0 auto;
+  text-align: center;
+  width: 311px;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  letter-spacing: 0.225em;
+  margin-bottom: 0;
+}
+
+.main-text {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  padding: 1em;
+  margin-top: 0;
+}
+
+@media (min-width: 700px) {
+  .main {
+    grid-row: 2/4;
+    align-items: center;
+    text-align: left;
+    justify-self: center;
+    width: 445px;
+  }
+  .main-title {
+    font-size: 4rem;
+  }
+  .main-text {
+    text-align: left;
+    font-size: 1rem;
+    padding-left: 0;
+    line-height: 1.7;
+    width: 430px;
+  }
+}
 .form-btn {
   background-image: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 93%, 68%));
   width: 20%;
