@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./scss/style.scss">
+
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
-  We're coming soon
+  <div class="container-grid">
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+    <img class="logo" src="./images/logo.svg" aria-hidden="true" alt="">
 
-  Email Address
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+    <img class="mobile-hero-img" src="./images/hero-mobile.jpg" alt="">
+    <img class="desktop-hero-img" src="./images/hero-desktop.jpg" alt="">
+
+    <main class="main">
+
+      <h1 class="main-title"><span class="main-title-accent">WE'RE </span>COMING SOON</h1>
+      <p class="main-text">Hello fellow shoppers! We're currently building our new fashion store. Add your email below
+        to stay up-to-date with announcements and our launch deals.
+      </p>
+
+      <form id="form" class="form" action="submit">
+        <input type="text" name="email" id="email" class="form-email" placeholder="Email Address">
+        <img id="error-icon" class="form-error-icon" src="./images/icon-error.svg" alt="">
+        <p id="error-msg" class="form-error-msg">Please provide a valid email</p>
+        <button class="form-btn" type="submit"><img class="form-btn-img" src="./images/icon-arrow.svg" alt=""></button>
+      </form>
+
+    </main>
+    <footer class="footer">
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Lawrence Caudle</a>.
+      </p>
+    </footer>
+
+  </div>
+
+  <script src="index.js"></script>
 </body>
+
 </html>
