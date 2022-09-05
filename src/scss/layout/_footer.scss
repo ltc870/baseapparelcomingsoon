@@ -1,0 +1,25 @@
+.footer {
+    margin-bottom: 2em;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(0, 36%, 70%);
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.attribution a {
+    color: #f96464;
+    text-decoration: none;
+}
+
+@media (min-width: 700px) {
+    .footer {
+        margin-bottom: 0;
+    }
+
+    .attribution {
+        margin-top: -3em;
+    }
+}
