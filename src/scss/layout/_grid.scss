@@ -1,0 +1,7 @@
+@media (min-width: 700px) {
+    .container-grid {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: repeat(3, auto);
+    }
+}
