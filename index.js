@@ -15,7 +15,7 @@ form.addEventListener("submit", (event) => {
 
     if (email.value.match(regEx)) {
         alert("Thank you for your submission!!");
-        form.submit();
+        form.reset();
     } else {
         errorMsg.style.visibility = "visible";
         errorIcon.style.visibility = "visible";
